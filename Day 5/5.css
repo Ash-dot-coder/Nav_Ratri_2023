@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Cabin+Sketch&family=Fugaz+One&family=Teko:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background: linear-gradient(45deg, #06b76a, #03708b); */
+    background: rgb(0, 128, 160);
+}
+
+/* Head */
+.t1 {
+    text-align: center;
+    font-size: 4rem;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+}
+
+.t1 h4 {
+    border-radius: 12px;
+    /* background-color: rgb(255, 234, 0); */
+    color: black;
+    /* font-family: 'Baloo 2', sans-serif; */
+    box-shadow: 0px 0px 13px black;
+}
+
+.t1 img {
+    margin: 53px;
+    box-shadow: 0px 0px 13px black;
+    border: 2px solid black;
+    border-radius: 18px;
+    width: 468px;
+    height: 428px;
+    padding: 0px -12px;
+}
+
+
+/* Main */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    min-height: 100vh;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 423px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;}
+
+.container .card:hover {
+    height: 443px;
+    background: rgb(255, 255, 151);}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);}
+
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .content h2 {
+    font-size: 1.9rem;
+    font-family: 'Fugaz One', sans-serif;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container .card .content p {
+    color: #333;
+    font-size: 2.2rem;
+    font-family: 'Teko', sans-serif;
+}
+
+.container .card .content a {
+
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--clr);
+    color: #06b76a;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+/* Two */
+.contwo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    min-height: 100vh;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.contwo .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    width: 423px;
+    height: 300px;
+    background: rgb(246, 246, 241);
+    border-radius: 20px;
+    /* box-shadow: 0.35px 16px 13px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.contwo .card:hover {
+    height: 443px;
+    background: rgb(255, 255, 151);
+}
+
+.contwo .card .imgBx {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 200px;
+    /* background: #333; */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contwo .card:hover .imgBx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+
+.contwo .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contwo .card .content {
+    position: absolute;
+    top: 247px;
+    width: 100%;
+    padding: 0 13px;
+    height: 35px;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.contwo .card:hover .content {
+    top: 113px;
+    height: 250px;
+}
+
+.contwo .card .content h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    font-family: 'Fugaz One', sans-serif;
+    color: var(--clr);
+}
+
+.contwo .card .content p {
+    font-size: 2.1rem;
+    font-family: 'Teko', sans-serif;
+    color: black;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* color: #333; */
+    /* color: #06b76a; */
+}
+/* .contwo .card .content .e3 p{
+    font-size: 1.6rem;
+} */
+
+/* .contwo .card .content a {
+
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--clr);
+    color: #06b76a;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+} */
+
+
+/* Footer */
+.f {
+    text-align: center;
+    font-size: 4rem;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+}
+
+.f h4 {
+    font-family: 'Cabin Sketch', sans-serif;
+    background: rgb(245, 229, 166);
+    border-radius: 12px;
+    font-size: 73px;
+    color: black;
+    box-shadow: 0px 0px 13px black;
+    margin: 17px;
+}
+
+.f img {
+    margin: -47px;
+    box-shadow: 0px 0px 13px black;
+    border: 2px solid black;
+    border-radius: 18px;
+    width: 473px;
+    height: 473px;
+    padding: 0px -12px;
+}

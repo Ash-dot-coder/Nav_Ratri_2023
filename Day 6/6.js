@@ -1,0 +1,1 @@
+alert("Day 6 : Sixth Chask!")

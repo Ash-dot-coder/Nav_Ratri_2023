@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Changa:wght@200&family=EB+Garamond&family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .heading  */
+h1 {
+    color: black;
+    /* text-transform: capitalize; */
+    text-shadow: 9px 10px 13px rgb(11, 97, 90);
+    font-size: 5rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    /* padding: 20px; */
+    min-height: 100vh;
+    background-color: rgb(5, 60, 57);
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.flip-card {
+    margin: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 440px;
+    min-height: 600px;
+    height: auto;
+    background-color: #000000;
+    background-image: url(./1.png);
+    background-size: cover;
+    cursor: pointer;
+    background-position: center;
+    text-align: center;
+    backface-visibility: hidden;
+    border: 2px solid;
+    border-radius: 52px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flip-card:nth-of-type(2) .flip-card-front,
+.flip-card:nth-of-type(2) .flip-card-back {
+    background-image: url(./2.png);
+}
+
+.flip-card:nth-of-type(3) .flip-card-front,
+.flip-card:nth-of-type(3) .flip-card-back {
+    background-image: url(./3.png);
+}
+
+.flip-card:nth-of-type(4) .flip-card-front,
+.flip-card:nth-of-type(4) .flip-card-back {
+    background-image: url(./4.png);
+}
+
+.flip-card:nth-of-type(5) .flip-card-front,
+.flip-card:nth-of-type(5) .flip-card-back {
+    background-image: url(./5.png);
+}
+
+
+.flip-card:nth-of-type(6) .flip-card-front,
+.flip-card:nth-of-type(6) .flip-card-back {
+    background-image: url(./6.png);
+}
+
+.flip-card:nth-of-type(7) .flip-card-front,
+.flip-card:nth-of-type(7) .flip-card-back {
+    background-image: url(./7.png);
+}
+
+.flip-card:nth-of-type(8) .flip-card-front,
+.flip-card:nth-of-type(8) .flip-card-back {
+    background-image: url(./8.jpg);
+}
+
+.flip-card:nth-of-type(9) .flip-card-front,
+.flip-card:nth-of-type(9) .flip-card-back {
+    background-image: url(./9.jpg);
+}
+
+
+.flip-card-front {
+    transform: rotateY(0deg);
+}
+
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front::after,
+.flip-card-back::after {
+    content: "";
+    /* width: 100%; */
+    height: 100%;
+    background-color: #0a0a0a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.flip-card-front .inner,
+.flip-card-back .inner {
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    top: 67%;
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    z-index: 2;
+}
+
+/* .inner .icon {
+    width: 80px;
+    margin-bottom: 20px;
+} */
+
+.inner h3 {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 4px;
+    line-height: 40px;
+    text-transform: capitalize;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Orbitron', sans-serif;
+}
+
+.inner h2 {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 700;
+    padding: 4px;
+    line-height: 40px;
+    text-transform: capitalize;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Orbitron', sans-serif;
+}
+
+.inner h4 {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: capitalize;
+    /* font-family: 'Amatic SC', sans-serif; */
+    font-family: 'Caveat', cursive;
+}
+
+.inner p {
+    color: #ffffff;
+    padding: 3px;
+    font-size: 34px;
+    line-height: 28px;
+    font-weight: bold;
+    text-transform: lowercase;
+    /* font-family: 'EB Garamond', serif; */
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.flip-card:hover .flip-card-front {
+    transform: rotateY(-180deg);
+}
+
+.flip-card:hover .flip-card-back {
+    transform: rotateY(0deg);
+}

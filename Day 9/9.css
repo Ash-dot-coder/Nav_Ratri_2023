@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Sans+Devanagari:wght@200&family=Orbitron&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a532a;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    margin-top: 250px;
+    max-width: 800px;
+    transform: skewY(-20deg);
+}
+
+.container .imgBx {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    transform-origin: bottom;
+    transform: skewX(38deg);
+}
+
+.container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 466px;
+    height: 170px;
+    border-radius: 19px;
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.container .imgBx:hover img:nth-child(3) {
+    transform: translate(100px, -100px);
+}
+
+.container .imgBx:hover img:nth-child(2) {
+    transform: translate(50px, -50px);
+    opacity: 0.5;
+}
+
+.container .imgBx:hover img:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: 0.1;
+}
+
+
+.container h2 {
+    position: relative;
+    color: #d64916;
+     font-family: 'Orbitron', sans-serif;
+     text-transform: uppercase;
+    font-size: 3.4em;
+}
+
+
+.container .skew {
+    transform-origin: top;
+    transform: skewX(45deg);
+}
+
+.container .skew p {
+    color: #69e2e4;
+    font-family: 'Fredericka the Great', serif;
+    font-size: 2.4em;
+}
+
+.container .skew a {
+    position: relative;
+    padding: 10px 30px;
+    display: inline-block;
+    background: transparent;
+    color: #de6262;
+    transform-origin: top;
+    margin-top: 20px;
+    border: 2px solid #da7070;
+    transform: skewX(-45deg);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.container .skew a:hover {
+    background: #da652b;
+    color: #000;
+}
+
+.container .imgBx .topp img {
+    margin: -47px 3px;
+    width: 678px;
+    height: 278px;
+    transform: skewX(8deg);
+}
+
+.container .top {
+    margin: 84px 92px;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    font-style: italic;
+color: #e02d00;
+    font-weight: 782;
+    font-size: 4.4rem;
+}
+
+.container .imgBx .botm img {
+    margin: -63px 3px;
+    width: 648px;
+    height: 238px;
+    transform: skewX(18deg);
+}
+
+.container .bit{
+    margin: 0  114px;
+    font-family: 'Fredericka the Great', serif;
+    color:rgb(84, 220, 179);
+}
+.container .re{
+ font-size: 1.4rem;
+ margin: 0 19px;
+}
